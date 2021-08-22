@@ -8,6 +8,16 @@ Version: 1
     src: url("../fonts/PunkSongwriterRoughPERSO.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "TravisZone";
+    src: url("../fonts/TravisZone.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoRegular.ttf") format("truetype");
+}
+
 * {
     margin:0;
     padding:0;
@@ -28,10 +38,12 @@ header {
     height:60px;
     margin: auto;
     text-align: center;
+    position: fixed;
+    width: 100%;
 }
 
 #desktopMenu {
-    width: 1299px;
+    width: 1248px;
     margin: auto;
     padding-top:18px;
 }
@@ -60,16 +72,16 @@ header {
 
 #socialInfos {
     color: #FFFFFF;
-    height: 1089px;
+    height: 972px;
     background: url("../images/bg.jpg") top center no-repeat;
     text-transform: uppercase;
     font-family: PunkSongwriter, tahoma, arial, serif;
     font-size: 75px;
-    margin-top:-150px;
+
 }
 
 #infos {
-    padding-top:250px;
+    padding-top:150px;
     margin-left:550px;
 }
 
@@ -107,3 +119,65 @@ header {
     margin-top:50px;
 }
 
+/******* SUR SCENE ********/
+
+#surScene {
+    background-color: #b81d17;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom:50px;
+}
+
+#surScene h1 {
+    font-family: "TravisZone", Tahoma, Arial serif;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+#contentScene {
+    background-color: #ded7d7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1208px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#resume {
+    text-align: left;
+    padding:20px;
+}
+
+#resume p {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 17px;
+    margin-top:15px;
+}
+
+#liensScene {
+    margin-top:40px;
+}
+
+#lienTeaser, #lienDates {
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+}
+
+#lienTeaser {
+    background-color: #f3eeee;
+    border: solid 3px #b81d17;
+    color: #b81d17;
+}
+
+#lienDates {
+    background-color: #b81d17;
+    border: solid 3px #b81d17;
+    color: #f3eeee;
+    margin-left:20px;
+}
