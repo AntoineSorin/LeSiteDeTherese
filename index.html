@@ -14,14 +14,14 @@
         <div id="contentNav">
             <nav id="desktopMenu">
                 <ul>
-                    <li><a href="#accueil"><span>a</span>ccueil</a></li>
-                    <li><a href="#surScene"><span>s</span>ur <span>s</span>cene</a></li>
-                    <li><a href="#">livre<span>s</span></a></li>
-                    <li><a href="#"><span>d</span><span>a</span>te<span>s</span></a></li>
-                    <li><a href="#">me<span>d</span>i<span>a</span><span>s</span></a></li>
-                    <li><a href="#">b<span>o</span>utique</a></li>
-                    <li><a href="#">c<span>o</span>nt<span>a</span>ct<span>s</span></a></li>
-                    <li><a href="#">e<span>s</span>p<span>a</span>c<span>e</span> pr<span>o</span></a></li>
+                    <li><a class="js-scrollTo" href="#accueil"><span>a</span>ccueil</a></li>
+                    <li><a class="js-scrollTo" href="#surScene"><span>s</span>ur <span>s</span>cene</a></li>
+                    <li><a class="js-scrollTo" href="#livres">livre<span>s</span></a></li>
+                    <li><a class="js-scrollTo" href="#"><span>d</span><span>a</span>te<span>s</span></a></li>
+                    <li><a class="js-scrollTo" href="#">me<span>d</span>i<span>a</span><span>s</span></a></li>
+                    <li><a class="js-scrollTo" href="#">b<span>o</span>utique</a></li>
+                    <li><a class="js-scrollTo" href="#">c<span>o</span>nt<span>a</span>ct<span>s</span></a></li>
+                    <li><a class="js-scrollTo" href="#">e<span>s</span>p<span>a</span>c<span>e</span> pr<span>o</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -46,12 +46,13 @@
     </div>
 </header>
 <div id="surScene">
-    <h1>L'ange Punk !</h1>
+    <h1>Sur scène</h1>
     <div id="contentScene">
         <div id="affiche">
-            <img src="static/images/Affiche-MemePasMal.png" alt="Affiche-Spectacle-Meme-Pas-Mal">
+            <img src="static/images/scene/Affiche-MemePasMal.png" alt="Affiche-Spectacle-Meme-Pas-Mal">
         </div>
         <div id="resume">
+            <h2>L'ange punk !</h2>
             <p>Tel l’oiseau de feu, Thérèse revient dynamiter la scène française avec des textes décapants et poétiques.</p>
             <p>Sensible, drôle et rentre dedans, elle est la "TNT" de la poésie chantée. D’une plume aiguisée, seule avec sa guitare,
                 elle a l’art de créer une proximité avec le public.</p>
@@ -65,6 +66,57 @@
         </div>
     </div>
 </div>
+
+<div id="livres">
+    <h1>Livres</h1>
+
+    <div class="contentLivres">
+        <div id="resumeLivrePoissonLune">
+            <h2>Poisson lune</h2>
+            <p class="textItalic">"C’est ahurissant, comme seule la vie sait l’être."</p>
+            <p>J’ai revu des personnes qui me connaissaient avant. Elles ne m’ont pas reconnue. Mon visage était "lunaire" et mon corps obèse, tel un poisson lune.</p>
+            <p>Après 8 ans d’erreurs de diagnostic qui m’ont malencontreusement menée jusqu’en psychiatrie, j’ai été opérée d’une tumeur qui s’était installée dans mon hypophyse.</p>
+            <p>Vu que je suis un peu trois personnes différentes, j’ai demandé à ma psychologue de me faire un prix de groupe.</p>
+            <br>
+            <p class="textItalic">"Une plume précise et drôle avec des punchlines."</p>
+            <p>La maladie de Cushing, qui touche une personne sur un million, ce n’est pas héréditaire, ce n’est pas génétique, ce n’est pas viral, ce n’est pas contagieux. C’est pas de chance.</p>
+            <p>Chacun peut se dire : "Après tout, cette maladie est tellement rare qu’elle ne me concerne pas, je ne l’aurai jamais". Les maladies rares sont-elles si rares qu’on le pense ?</p>
+            <br>
+            <p class="textItalic">"Au delà du témoignage sur Cushing, on en retient surtout une force de vie, universelle et communicative."</p>
+            <p>Née en 1980, Thérèse Fournier sillonne les routes de France de 2003 à 2012 pour interpréter ses chansons. Munie de textes bien
+                sentis et d’une personnalité attachante, elle se fait une place sur la scène musicale, mais sa vie bascule lorsqu'elle tombe malade,
+                de la maladie de Cushing. Ce n'est qu'en 2019, après 8 ans d'erreurs de diagnostics, qu'elle est opérée d'une tumeur à l'hypophyse.
+                Tendre, drôle et engagée, elle saisit et retranscrit la difficulté d’un quotidien vécu, avec simplicité et avec une authenticité rare.
+                Thérèse Fournier signe ici son deuxième livre, après son roman : Juliette, l'art d'être ressucyclable, sorti en 2016.
+            </p>
+            <div id="liensPoissonLune">
+                <a id="lienDedicace" href="#">Séance de dédicaces</a><a id="lienCommanderPoissonLune" href="https://www.vent-des-lettres-shop.fr/fournier.html" target="_blank">Commander Poisson-Lune</a>
+            </div>
+        </div>
+        <div id="coverPoissonLune">
+            <img src="static/images/livres/CoverPoissonLune.jpg" alt="Cover-Livre-Poisson-Lune">
+        </div>
+    </div>
+
+    <div class="contentLivres conte">
+        <div id="coverContePoissonLune">
+            <img src="static/images/livres/CoverContePourEnfants.jpg" alt="Cover-Livre-Poisson-Lune">
+        </div>
+        <div id="resumeLivreConte">
+            <h2>Poisson lune - Conte pour enfants</h2>
+            <p>Cette belle histoire est un hymne à l’amour, à la vie, à l’avenir. Rempli d’humanité et de philosophie, Poisson lune le conte va
+                émerveiller vos enfants et les amener à voir que la lutte pour la vie ne peut se faire sans amour. L’apparence du corps n’est
+                pas conforme à la grandeur du cœur.  Telle est la leçon de cette histoire. Ce conte est inspiré du livre : Poisson lune,
+                témoignage sur une maladie rare, de la même auteure.
+            </p>
+            <div id="liensPoissonLuneConte">
+                <a id="lienCommanderPoissonLuneConte" href="https://www.vent-des-lettres-shop.fr/fournier.html" target="_blank">Commander le conte</a>
+            </div>
+        </div>
+    </div>`
+</div>
 <script src="https://kit.fontawesome.com/9b87c4faa8.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/defilement-page.js"></script>
 </body>
 </html>

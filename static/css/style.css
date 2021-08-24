@@ -132,23 +132,28 @@ header {
 #surScene h1 {
     font-family: "TravisZone", Tahoma, Arial serif;
     color: #FFFFFF;
-    letter-spacing: 2px;
-    padding: 10px;
+    letter-spacing: 3px;
+    padding: 20px;
 }
 
 #contentScene {
     background-color: #ded7d7;
     padding: 20px;
     border-radius: 10px;
-    width: 1208px;
-    margin: auto;
+    max-width: 1208px;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    margin: auto;
 }
 
 #resume {
     text-align: left;
     padding:20px;
+}
+
+#resume h2 {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 22px;
 }
 
 #resume p {
@@ -180,4 +185,109 @@ header {
     border: solid 3px #b81d17;
     color: #f3eeee;
     margin-left:20px;
+}
+
+/******* LIVRES ********/
+
+#livres {
+    background-color: #faf8f8;
+    text-align: center;
+}
+
+#livres h1 {
+    color: #b81d17;
+    font-family: "TravisZone", Tahoma, Arial serif;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+
+.contentLivres {
+    background-color: #f3eeee;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1208px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: auto;
+}
+
+#resumeLivrePoissonLune {
+    text-align: left;
+    padding:20px;
+}
+
+#resumeLivrePoissonLune h2 {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 22px;
+}
+
+#resumeLivrePoissonLune p {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 17px;
+    margin-top:15px;
+}
+
+#resumeLivrePoissonLune p.textItalic {
+    font-style: italic;
+}
+
+#liensPoissonLune {
+    margin-top:40px;
+}
+
+#lienDedicace, #lienCommanderPoissonLune {
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+}
+
+#lienDedicace {
+    background-color: #f3eeee;
+    border: solid 3px #b81d17;
+    color: #b81d17;
+}
+
+#lienCommanderPoissonLune {
+    background-color: #b81d17;
+    border: solid 3px #b81d17;
+    color: #f3eeee;
+    margin-left:20px;
+}
+
+.conte {
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+#resumeLivreConte {
+    text-align: left;
+    padding: 20px;
+}
+
+#resumeLivreConte h2 {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 22px;
+}
+
+#resumeLivreConte p {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 17px;
+    margin-top:15px;
+}
+
+#liensPoissonLuneConte {
+    margin-top:40px;
+}
+
+#lienCommanderPoissonLuneConte {
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    background-color: #b81d17;
+    border: solid 3px #b81d17;
+    color: #f3eeee;
 }
