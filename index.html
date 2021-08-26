@@ -17,7 +17,6 @@
                     <li><a class="js-scrollTo" href="#accueil"><span>a</span>ccueil</a></li>
                     <li><a class="js-scrollTo" href="#surScene"><span>s</span>ur <span>s</span>cene</a></li>
                     <li><a class="js-scrollTo" href="#livres">livre<span>s</span></a></li>
-                    <li><a class="js-scrollTo" href="#"><span>d</span><span>a</span>te<span>s</span></a></li>
                     <li><a class="js-scrollTo" href="#">me<span>d</span>i<span>a</span><span>s</span></a></li>
                     <li><a class="js-scrollTo" href="#">b<span>o</span>utique</a></li>
                     <li><a class="js-scrollTo" href="#">c<span>o</span>nt<span>a</span>ct<span>s</span></a></li>
@@ -38,9 +37,7 @@
                         </a>
                     </div>
                 </div>
-                <div id="teaser">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+
             </div>
         </div>
     </div>
@@ -48,23 +45,60 @@
 <div id="surScene">
     <h1>Sur scène</h1>
     <div id="contentScene">
-        <div id="affiche">
-            <img src="static/images/scene/Affiche-MemePasMal.png" alt="Affiche-Spectacle-Meme-Pas-Mal">
-        </div>
-        <div id="resume">
-            <h2>L'ange punk !</h2>
-            <p>Tel l’oiseau de feu, Thérèse revient dynamiter la scène française avec des textes décapants et poétiques.</p>
-            <p>Sensible, drôle et rentre dedans, elle est la "TNT" de la poésie chantée. D’une plume aiguisée, seule avec sa guitare,
-                elle a l’art de créer une proximité avec le public.</p>
-            <p>Ne vous y trompez pas, nous sommes très loin des clichés de la chanson française ! Auteure-compositrice,
-                Thérèse bouscule les règles du verbe avec un humour implacable.</p>
-            <p>Inimitable, c’est avec et une authenticité rare que cette chanteuse-comédienne s’engage dans un
-                one-woman-show avec un esprit décidément rock.</p>
-            <div id="liensScene">
-                <a id="lienTeaser" href="#">Voir le teaser</a><a id="lienDates" href="#">Voir les dates</a>
+        <div id="gridScene">
+            <div id="affiche">
+
+                <img src="static/images/scene/Affiche-MemePasMal.png" alt="Affiche-Spectacle-Meme-Pas-Mal">
+            </div>
+            <div id="resume">
+                <h2>L'ange punk !</h2>
+                <p>Tel l’oiseau de feu, Thérèse revient dynamiter la scène française avec des textes décapants et poétiques.</p>
+                <p>Sensible, drôle et rentre dedans, elle est la "TNT" de la poésie chantée. D’une plume aiguisée, seule avec sa guitare,
+                    elle a l’art de créer une proximité avec le public.</p>
+                <p>Ne vous y trompez pas, nous sommes très loin des clichés de la chanson française ! Auteure-compositrice,
+                    Thérèse bouscule les règles du verbe avec un humour implacable.</p>
+                <p>Inimitable, c’est avec et une authenticité rare que cette chanteuse-comédienne s’engage dans un
+                    one-woman-show avec un esprit décidément rock.</p>
+                <div id="videos">
+                    <iframe width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
+        <div id="contentBilletterie">
+            <h3>Billetterie</h3>
+            <div class="date">
+                <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
+                <div class="date">Samedi 11 septembre 2021</div>
+                <div class="ville">Saint-André-des-Eaux (22)</div>
+                <div class="salle">L'éprouvette</div>
+                <div class="vente"><a href="https://www.facebook.com/events/4434351029919152" target="_blank">Réserver</a></div>
+            </div>
+            <div class="date">
+                <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
+                <div class="date">Mardi 28 septembre 2021</div>
+                <div class="ville">Nantes (44)</div>
+                <div class="salle">Salle Paul Fort</div>
+                <div class="vente"><a href="https://www.labouchedair.com/evenements/therese/" target="_blank">Réserver</a></div>
+            </div>
+            <div class="date">
+                <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
+                <div class="date">Mardi 11 janvier 2022</div>
+                <div class="ville">Beaucouzé (49)</div>
+                <div class="salle">Région en scène</div>
+                <div class="soon">Bientôt disponible</div>
+            </div>
+            <div class="date">
+                <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
+                <div class="date">Vendredi 8 avril 2022</div>
+                <div class="ville">Pornichet (44)</div>
+                <div class="salle">Quai des Arts</div>
+                <div class="vente"><a href="https://quaidesarts-pornichet.fr/therese-emily-loizeau" target="_blank">Réserver</a></div>
+            </div>
+        </div>
+
     </div>
+
 </div>
 
 <div id="livres">
@@ -113,7 +147,13 @@
                 <a id="lienCommanderPoissonLuneConte" href="https://www.vent-des-lettres-shop.fr/fournier.html" target="_blank">Commander le conte</a>
             </div>
         </div>
-    </div>`
+    </div>
+    <div id="dedicaces">
+        <p class="bold">En dédicace pour le livre Poisson lune et le conte pour enfants : </p>
+        <div id="datesDedicaces">
+            <p>Dimanche 17 octobre 2021 : La Chaume en Retz – Salon du livre jeunesse.</p>
+        </div>
+    </div>
 </div>
 <script src="https://kit.fontawesome.com/9b87c4faa8.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

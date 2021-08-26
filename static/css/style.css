@@ -43,7 +43,7 @@ header {
 }
 
 #desktopMenu {
-    width: 1248px;
+    width: 1127px;
     margin: auto;
     padding-top:18px;
 }
@@ -82,7 +82,7 @@ header {
 
 #infos {
     padding-top:150px;
-    margin-left:550px;
+    margin-left:450px;
 }
 
 #infos span {
@@ -115,10 +115,6 @@ header {
     margin-left: 140px;
 }
 
-#teaser {
-    margin-top:50px;
-}
-
 /******* SUR SCENE ********/
 
 #surScene {
@@ -141,14 +137,23 @@ header {
     padding: 20px;
     border-radius: 10px;
     max-width: 1208px;
+
+    margin: auto;
+}
+
+#gridScene {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin: auto;
+}
+
+#affiche {
+    margin-left:30px
 }
 
 #resume {
     text-align: left;
-    padding:20px;
+    padding:20px 0 20px 20px;
+    margin-left:10px;
 }
 
 #resume h2 {
@@ -162,30 +167,64 @@ header {
     margin-top:15px;
 }
 
+#videos {
+    margin-top:24px;
+}
+
 #liensScene {
     margin-top:40px;
 }
 
-#lienTeaser, #lienDates {
+#lienDates {
     text-decoration: none;
     padding:10px;
     border-radius: 5px;
     text-transform: uppercase;
     font-family: "LatoRegular", Tahoma, Arial, serif;
-}
-
-#lienTeaser {
-    background-color: #f3eeee;
-    border: solid 3px #b81d17;
-    color: #b81d17;
-}
-
-#lienDates {
     background-color: #b81d17;
     border: solid 3px #b81d17;
     color: #f3eeee;
-    margin-left:20px;
 }
+
+/******* DATES ********/
+
+h3 {
+    color: #b81d17;
+    font-family: "TravisZone", Tahoma, Arial serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+#contentBilletterie {
+    width: 1210px;
+    margin: auto;
+}
+
+.date {
+    display: grid;
+    grid-template-columns: 200px 250px 250px 250px 200px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.date, .ville, .salle, .vente, .soon {
+    line-height: 50px;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+}
+
+.vente a {
+    color: #ded7d7;
+    background-color: #b81d17;
+    padding:15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
 
 /******* LIVRES ********/
 
@@ -290,4 +329,19 @@ header {
     background-color: #b81d17;
     border: solid 3px #b81d17;
     color: #f3eeee;
+}
+
+#dedicaces {
+    margin-top:30px;
+    padding-bottom:30px;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#datesDedicaces {
+    margin-top: 20px;
 }
