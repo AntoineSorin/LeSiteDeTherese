@@ -188,7 +188,7 @@ header {
 
 /******* DATES ********/
 
-h3 {
+#surScene h3 {
     color: #b81d17;
     font-family: "TravisZone", Tahoma, Arial serif;
     letter-spacing: 2px;
@@ -344,4 +344,56 @@ h3 {
 
 #datesDedicaces {
     margin-top: 20px;
+}
+
+/******* CONTACTS ********/
+
+#contacts {
+    background: url("../images/contacts/bg-contacts.jpg") top center no-repeat;
+}
+
+#infos-spectacle {
+    text-align: center;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    padding:20px;
+}
+
+#contacts {
+    color: #f3eeee;
+}
+
+#contacts h1 {
+    font-family: "TravisZone", Tahoma, Arial serif;
+    color: #b81d17;
+    letter-spacing: 3px;
+    padding:20px;
+    text-align: center;
+}
+
+#diffusion h3, #communication h3, #contact h3 {
+    margin-top : 10px;
+}
+
+.personne {
+    margin-top: 20px;
+}
+
+.personne a {
+    color: #b81d17;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#communication, #contact {
+    margin-top: 50px;
+}
+
+.info {
+    margin-top:10px;
+}
+
+.info a {
+    color: #b81d17;
+    text-decoration: none;
+    font-weight: bold;
 }
