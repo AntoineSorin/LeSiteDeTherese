@@ -31,6 +31,7 @@ header {
     text-align: center;
 }
 
+
 /******* MENU ********/
 
 #contentNav {
@@ -43,7 +44,7 @@ header {
 }
 
 #desktopMenu {
-    width: 1127px;
+    width: 1052px;
     margin: auto;
     padding-top:18px;
 }
@@ -82,7 +83,7 @@ header {
 
 #infos {
     padding-top:150px;
-    margin-left:450px;
+    margin-left:-450px;
 }
 
 #infos span {
@@ -96,7 +97,7 @@ header {
 #socialInfos a {
     text-decoration: none;
     font-size: 40px;
-    margin:0 10px;
+    margin:0 1px;
     color: #FFFFFF;
     transition-duration: 0.5s;
 }
@@ -167,23 +168,13 @@ header {
     margin-top:15px;
 }
 
-#videos {
+#videos-concert {
     margin-top:24px;
 }
 
-#liensScene {
-    margin-top:40px;
-}
 
-#lienDates {
-    text-decoration: none;
-    padding:10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: "LatoRegular", Tahoma, Arial, serif;
-    background-color: #b81d17;
-    border: solid 3px #b81d17;
-    color: #f3eeee;
+#vidRight {
+    margin-left: 50px;
 }
 
 /******* DATES ********/
@@ -282,17 +273,11 @@ header {
     font-family: "LatoRegular", Tahoma, Arial, serif;
 }
 
-#lienDedicace {
-    background-color: #f3eeee;
-    border: solid 3px #b81d17;
-    color: #b81d17;
-}
 
 #lienCommanderPoissonLune {
     background-color: #b81d17;
     border: solid 3px #b81d17;
     color: #f3eeee;
-    margin-left:20px;
 }
 
 .conte {
@@ -331,11 +316,11 @@ header {
     color: #f3eeee;
 }
 
+
 #dedicaces {
-    margin-top:30px;
-    padding-bottom:30px;
     font-family: "LatoRegular", Tahoma, Arial, serif;
     font-size: 20px;
+    padding:75px;
 }
 
 .bold {
@@ -345,6 +330,166 @@ header {
 #datesDedicaces {
     margin-top: 20px;
 }
+
+.contentVideoLivres {
+    margin-top:30px;
+    padding:10px;
+    display: inline-block;
+}
+
+#asso {
+    padding-bottom:50px;
+}
+
+#asso a {
+    text-decoration: none;
+    color: #b81d17;
+}
+
+#logoAsso {
+    width:200px;
+}
+
+/******* PHOTOS ********/
+
+#photos {
+    background: url("../images/bg2.jpg") top center no-repeat;
+    text-align: center;
+    padding:40px;
+}
+
+#photos h1 {
+    color: #f3eeee;
+    font-family: "TravisZone", Tahoma, Arial serif;
+    letter-spacing: 3px;
+    padding: 30px;
+}
+
+#contentPhotos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: 1300px;
+    margin: auto;
+    grid-gap: 50px;
+}
+
+.card img {
+    width: 300px;
+}
+
+#contentInfosPhotos {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    color: #f3eeee;
+    padding:30px;
+}
+
+#contentInfosPhotos p{
+    margin-bottom:40px;
+}
+
+#contentInfosPhotos a {
+    background-color: #f3eeee;
+    color: #b81d17;
+    padding:15px;
+    border-radius:5px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#contentInfosPhotos a:hover {
+    background-color: #b81d17;
+    color: #f3eeee;
+}
+
+/******* CLIPS ********/
+
+#clips {
+    background-color: #b81d17;
+    padding:40px 0 100px 0;
+    text-align: center;
+}
+
+#clips h1 {
+    color: #f3eeee;
+    font-family: "TravisZone", Tahoma, Arial serif;
+    letter-spacing: 3px;
+    margin-bottom:50px;
+}
+
+#contentClip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.clip {
+    margin:20px;
+}
+
+/******* BOUTIQUE ********/
+
+#boutique {
+    background-color: #f3eeee;
+    padding:40px 0 100px 0;
+    text-align: center;
+}
+
+#boutique h1 {
+    color: #b81d17;
+    font-family: "TravisZone", Tahoma, Arial serif;
+    letter-spacing: 3px;
+    margin-bottom:50px;
+}
+
+#contentBoutique {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    max-width: 1300px;
+    margin: auto;
+}
+
+.article {
+    background-color: #ded7d7;
+    width:250px;
+    border-radius: 20px;
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+}
+
+.article h5 {
+    margin:5px 0 20px 0;
+}
+
+.infosArticle {
+    padding-bottom:30px;
+}
+
+.commande {
+    background-color: #b81d17;
+    color: #f3eeee;
+    border-radius: 5px;
+    padding:10px;
+    text-decoration: none;
+}
+
+.plusdinfos {
+    background-color: #f3eeee;
+    color: #b81d17;
+    border: solid 2px #b81d17;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.coverArticle {
+    width:250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#venteDVD {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    margin-top:20px;
+}
+
 
 /******* CONTACTS ********/
 
@@ -396,4 +541,50 @@ header {
     color: #b81d17;
     text-decoration: none;
     font-weight: bold;
+}
+
+#contact {
+    margin-bottom : 40px;
+}
+
+#socialContact {
+    margin:40px;
+}
+
+#socialContact p {
+    margin:10px;
+}
+
+#socialContact a {
+    text-decoration: none;
+    color: #f3eeee;
+    font-size: 30px;
+    margin:5px;
+    transition-duration: 0.5s;
+}
+
+#socialContact a:hover {
+    color: #b81d17;
+}
+
+#lienLogoKalmia {
+    text-decoration: none;
+}
+
+#contentEditeur {
+    margin:60px 20px 20px 20px;
+}
+
+#lienEditeur {
+    text-decoration: none;
+    color: #f3eeee;
+}
+
+#realSite {
+    margin-top:20px;
+}
+
+#realSite a {
+    color: #b81d17;
+    text-decoration: none;
 }

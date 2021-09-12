@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="icon" type="image/x-icon" href="static/images/icon.png"/>
-
+    <link href="static/js/zoombox/zoombox.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/zoombox/zoombox.js"></script>
+    <script>
+        jQuery(function($){
+            $('a.zoombox').zoombox();
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -17,10 +24,10 @@
                     <li><a class="js-scrollTo" href="#accueil"><span>a</span>ccueil</a></li>
                     <li><a class="js-scrollTo" href="#surScene"><span>s</span>ur <span>s</span>cene</a></li>
                     <li><a class="js-scrollTo" href="#livres">livre<span>s</span></a></li>
-                    <li><a class="js-scrollTo" href="#">me<span>d</span>i<span>a</span><span>s</span></a></li>
-                    <li><a class="js-scrollTo" href="#">b<span>o</span>utique</a></li>
+                    <li><a class="js-scrollTo" href="#photos">ph<span>o</span>t<span>o</span><span>s</span></a></li>
+                    <li><a class="js-scrollTo" href="#clips">clip<span>s</span></a></li>
+                    <li><a class="js-scrollTo" href="#boutique">b<span>o</span>utique</a></li>
                     <li><a class="js-scrollTo" href="#contacts">c<span>o</span>nt<span>a</span>ct<span>s</span></a></li>
-                    <li><a class="js-scrollTo" href="#">e<span>s</span>p<span>a</span>c<span>e</span> pr<span>o</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -34,6 +41,9 @@
                         </a>
                         <a href="https://www.instagram.com/therese.artiste/" target="_blank">
                             <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZoshTe1Z8PFWH-KuGClRjQ" target="_blank">
+                            <i class="fab fa-youtube-square"></i>
                         </a>
                     </div>
                 </div>
@@ -59,9 +69,9 @@
                     Thérèse bouscule les règles du verbe avec un humour implacable.</p>
                 <p>Inimitable, c’est avec et une authenticité rare que cette chanteuse-comédienne s’engage dans un
                     one-woman-show avec un esprit décidément rock.</p>
-                <div id="videos">
+                <div id="videos-concert">
                     <iframe width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="vidRight" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -124,11 +134,21 @@
                 Thérèse Fournier signe ici son deuxième livre, après son roman : Juliette, l'art d'être ressucyclable, sorti en 2016.
             </p>
             <div id="liensPoissonLune">
-                <a id="lienDedicace" href="#">Séance de dédicaces</a><a id="lienCommanderPoissonLune" href="https://www.vent-des-lettres-shop.fr/fournier.html" target="_blank">Commander Poisson-Lune</a>
+                <a id="lienCommanderPoissonLune" href="https://www.vent-des-lettres-shop.fr/fournier.html" target="_blank">Commander Poisson-Lune</a>
             </div>
         </div>
         <div id="coverPoissonLune">
             <img src="static/images/livres/CoverPoissonLune.jpg" alt="Cover-Livre-Poisson-Lune">
+        </div>
+    </div>
+
+
+    <div id="videosLivre">
+        <div class="contentVideoLivres">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dNb_IS2xS38?start=2667" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="contentVideoLivres">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7AFlCuaOzSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -154,7 +174,132 @@
             <p>Dimanche 17 octobre 2021 : La Chaume en Retz – Salon du livre jeunesse.</p>
         </div>
     </div>
+    <div id="asso">
+        <a href="http://www.surrenales.com/" target="_blank">
+        <img id="logoAsso" src="static/images/livres/logo-assoSurrenales.png" alt="logo-association-Surrenales">
+        <br>
+        Contacter l'Association Surrénales
+        </a>
+    </div>
 </div>
+
+<div id="photos">
+    <h1>Photos</h1>
+    <div id="contentPhotos">
+        <a href="static/images/photos/photo1-VincentReynal.jpg" class="zoombox zgallery1">
+            <div class="card">
+                <img src="static/images/photos/min/photo1-VincentReynal-min.jpg" alt="photo1">
+            </div>
+        </a>
+
+        <a href="static/images/photos/photo2-VincentReynal.jpg" class="zoombox zgallery1">
+            <div class="card">
+                <img src="static/images/photos/min/photo2-VincentReynal-min.jpg" alt="photo1">
+            </div>
+        </a>
+
+        <a href="static/images/photos/photo3-VincentReynal.jpg" class="zoombox zgallery1">
+            <div class="card">
+                <img src="static/images/photos/min/photo3-VincentReynal-min.jpg" alt="photo1">
+            </div>
+        </a>
+
+        <a href="static/images/photos/photo4-VincentReynal.jpg" class="zoombox zgallery1">
+            <div class="card">
+                <img src="static/images/photos/min/photo4-VincentReynal-min.jpg" alt="photo1">
+            </div>
+        </a>
+
+        <a href="static/images/photos/photo5-VincentReynal.jpg" class="zoombox zgallery1">
+            <div class="card">
+                <img src="static/images/photos/min/photo5-VincentReynal-min.jpg" alt="photo1">
+            </div>
+        </a>
+    </div>
+    <div id="contentInfosPhotos">
+        <p>Photos © Vincent Reynal</p>
+        <a href="static/images/photos/PackPhotosTherese-©VincentReynal.zip">Télécharger le pack photos</a>
+    </div>
+
+</div>
+
+<div id="clips">
+    <h1>Clips</h1>
+    <div id="contentClip">
+        <div class="clip">
+            <iframe width="353" height="222" src="https://www.youtube.com/embed/zb6S2eKS1dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="clip">
+            <iframe width="353" height="222" src="https://www.youtube.com/embed/LiJzwTfskr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="clip">
+            <iframe width="353" height="222" src="https://www.youtube.com/embed/TcVyBFjGPu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="clip">
+            <iframe width="353" height="222" src="https://www.youtube.com/embed/vzt1Ka1DRHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="clip">
+            <iframe width="353" height="222" src="https://www.youtube.com/embed/O8f07Yn45IU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="clip">
+            <iframe width="353" height="222" src="https://www.youtube.com/embed/ktq4lNze6HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+<div id="boutique">
+    <h1>Boutique</h1>
+
+    <div id="contentBoutique">
+
+        <div class="article">
+            <img class="coverArticle" src="static/images/boutique/CeluiQuilMeFaut-Habille.png" alt="Album-CeluiQuilMeFaut">
+            <div class="infosArticle">
+                <h5>Celui Qu'il Me Faut - 2012</h5>
+                <a class="zoombox plusdinfos zgallery2" href="static/images/boutique/infos/Infos-CeluiQuilMeFaut-2012.png">En savoir plus</a>
+                <a class="commande" href="https://boutique.lezaralouest.com/fr/s02_artistes/s02p01_fiche_artiste.php?artiste=286" target="_blank">Commander</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img class="coverArticle" src="static/images/boutique/DVD-LePireContreAttaque.png" alt="DVD-LePireContreAttaque">
+            <div class="infosArticle">
+                <h5>DVD Le Pire Contre-Attaque - 2009</h5>
+                <a class="zoombox plusdinfos zgallery2" href="static/images/boutique/infos/Infos-DVD-LePireContreAttaque-2009.png">En savoir plus</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img class="coverArticle" src="static/images/boutique/CaPourraitEtrePire.png" alt="Album-CaPourraitEtrePire">
+            <div class="infosArticle">
+                <h5>Ca Pourrait Être Pire - 2009</h5>
+                <a class="zoombox plusdinfos zgallery2" href="static/images/boutique/infos/Infos-CaPourraitEtrePire.png">En savoir plus</a>
+                <a class="commande" href="https://boutique.lezaralouest.com/fr/s02_artistes/s02p01_fiche_artiste.php?artiste=286" target="_blank">Commander</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img class="coverArticle" src="static/images/boutique/EnConcert.png" alt="Album-EnConcert">
+            <div class="infosArticle">
+                <h5>En Concert - 2007</h5>
+                <a class="zoombox plusdinfos zgallery2" href="static/images/boutique/infos/Infos-EnConcert-2007.png">En savoir plus</a>
+                <a class="commande" href="https://boutique.lezaralouest.com/fr/s02_artistes/s02p01_fiche_artiste.php?artiste=286" target="_blank">Commander</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img class="coverArticle" src="static/images/boutique/LiberezLesMarionnettes.png" alt="Album-LiberezLesMarionnettes">
+            <div class="infosArticle">
+                <h5>Libérez les marionnettes - 2005</h5>
+                <a class="zoombox plusdinfos zgallery2" href="static/images/boutique/infos/Infos-LiberezLesMarionettes-2005.png">En savoir plus</a>
+                <a class="commande" href="https://boutique.lezaralouest.com/fr/s02_artistes/s02p01_fiche_artiste.php?artiste=286" target="_blank">Commander</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <p id="venteDVD">Le DVD du concert « Le pire contre-attaque » est en vente uniquement après les concerts.</p>
+</div>
+
 
 <div id="contacts">
     <h1>contacts</h1>
@@ -163,7 +308,9 @@
         <div id="diffusion">
             <h3>Concert - Diffusion</h3>
             <div class="personne">
-                <img src="static/images/contacts/logoKalmiaProductionsBlanc.png" alt="logo-kalmia-productions">
+                <a id="lienLogoKalmia" href="http://kalmiaproductions.com/" target="_blank">
+                    <img src="static/images/contacts/logoKalmiaProductionsBlanc.png" alt="logo-kalmia-productions">
+                </a>
                 <div id="infoProd">
                     <br>Benoit AGOYER
                     <br>00 33 (0)6 68 59 20 30
@@ -172,17 +319,51 @@
             </div>
         </div>
         <div id="communication">
-            <h3>Site Web / Community Management</h3>
+            <h3>Community Management</h3>
             <div class="personne">
                 Antoine SORIN
                 <br><a href="mailto:antoine@kalmiaproductions.com">antoine@kalmiaproductions.com</a>
             </div>
+            <div id="socialContact">
+                <p>Thérèse sur les réseaux sociaux : </p>
+                <a href="https://www.facebook.com/therese.artiste" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/therese.artiste/" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCZoshTe1Z8PFWH-KuGClRjQ" target="_blank">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
+                <a href="https://fr.linkedin.com/in/th%C3%A9r%C3%A8se-fournier-a588b4bb" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        ___________________________________
+        <div id="Editeur">
+            <div id="contentEditeur">
+                <a id="lienEditeur" href="https://www.vent-des-lettres.com/">
+                    <img src="static/images/contacts/vdl-logo-2.png" alt="Logo-VDL">
+                    <p>Vent des Lettres Editions </p>
+                    <p>06 13 59 05 93</p>
+                </a>
+            </div>
+
         </div>
         <div id="contact">
+
+
             <h3>Contacter Thérèse</h3>
             <br>
-            <p class="info">A propos du spectacle : <a href="mailto:lesitedetherese@gmail.com">lesitedetherese@gmail.com</a></p>
-            <p class="info">A propos de Poisson Lune : <a href="mailto:livrepoissonlune@gmail.com">livrepoissonlune@gmail.com</a></p>
+            <p class="info">À propos du concert : <a href="mailto:lesitedetherese@gmail.com">lesitedetherese@gmail.com</a></p>
+            <p class="info">À propos de Poisson Lune : <a href="mailto:livrepoissonlune@gmail.com">livrepoissonlune@gmail.com</a></p>
+        </div>
+        <div id="droitsPhotos">
+            Photos © Erick Sanka
+        </div>
+        <div id="realSite">
+            Site web réalisé par <a href="https://www.antoine-sorin.com/" target="_blank">As.com</a>
         </div>
     </div>
 
