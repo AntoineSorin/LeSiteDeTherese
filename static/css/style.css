@@ -138,7 +138,6 @@ header {
     padding: 20px;
     border-radius: 10px;
     max-width: 1208px;
-
     margin: auto;
 }
 
@@ -188,11 +187,10 @@ header {
 }
 
 #contentBilletterie {
-    width: 1210px;
     margin: auto;
 }
 
-.date {
+.contentDate {
     display: grid;
     grid-template-columns: 200px 250px 250px 250px 200px;
 }
@@ -201,7 +199,7 @@ header {
     height: 50px;
 }
 
-.date, .ville, .salle, .vente, .soon {
+.contentDate, .ville, .salle, .vente, .soon {
     line-height: 50px;
     font-family: "LatoRegular", Tahoma, Arial, serif;
 }
@@ -353,7 +351,7 @@ header {
 /******* PHOTOS ********/
 
 #photos {
-    background: url("../images/bg2.jpg") top center no-repeat;
+    background: url("../images/bg2.jpg") top left repeat-x;
     text-align: center;
     padding:40px;
 }
@@ -419,6 +417,8 @@ header {
 #contentClip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: auto;
 }
 
 .clip {
@@ -452,6 +452,7 @@ header {
     width:250px;
     border-radius: 20px;
     font-family: "LatoRegular", Tahoma, Arial, serif;
+    margin: auto;
 }
 
 .article h5 {
@@ -588,3 +589,642 @@ header {
     color: #b81d17;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+#burger {
+    display: none;
+}
+
+/* Style des contenus */
+#form1 label {
+    background:#b81d17;
+    display:block;
+    padding:5px;
+    color:#f3eeee;
+    text-align:center;
+    font-weight:bold;
+    border-radius:2px;
+    cursor:pointer;
+    margin-top:-3px;
+}
+
+#contenu {
+    display:flex;
+    background: #000000;
+    position:fixed;
+    top:0;
+    right:-200px;
+    width:200px;
+    height:100vh;
+    overflow:hidden;
+    transition:all ease-in 0.4s;
+    z-index: 900;
+    transition-duration: 0.5s;
+    padding-top:100px;
+}
+
+#contenu #textes {
+    width:60%;
+    margin:0 auto;
+}
+
+#contenu p {
+    margin-bottom:.8em;
+}
+
+#contenu p:last-child {
+    margin-bottom:0;
+}
+
+/* Menu burger */
+#menu-burger {
+    position:absolute;
+    z-index:950;
+    top:2.5em;
+    right:2.3em;
+    cursor:pointer;
+    display:none;
+    transition:0.55s;
+}
+
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+    display:block;
+    width:20px;
+    height:3px;
+    background-color:#f3eeee;
+    margin:4px 4px;
+    transition:0.4s;
+}
+
+input[type="checkbox"]#burger:checked ~ label .bar1 {
+    -webkit-transform:rotate(-45deg) translate(-5px, 5px);
+    transform:rotate(-45deg) translate(-5px, 5px);
+}
+
+input[type="checkbox"]#burger:checked ~ label .bar2 {
+    opacity: 0;
+}
+
+input[type="checkbox"]#burger:checked ~ label .bar3 {
+    -webkit-transform:rotate(45deg) translate(-5px, -5px);
+    transform:rotate(45deg) translate(-5px, -5px);
+}
+
+/* Effet Slide/Swipe pleine page */
+#form1 input[type="checkbox"]:checked ~ #contenu {
+    right:0;
+}
+
+#form1 input[type="checkbox"]:checked ~ #menu-burger {
+    right:5.0em;
+    transition:0.55s;
+}
+
+#menuResp {
+    width:100%;
+}
+
+#menuResp ul li {
+    list-style: none;
+    padding:20px 0;
+}
+
+#menuResp ul li a {
+    font-family: PunkSongwriter, tahoma, arial, serif;
+    color: #f3eeee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+#menuResp ul li a span {
+    color: #b81d17;
+}
+
+#wrapper {
+    display: none;
+}
+
+#videos-concert-mobile {
+    display: none;
+}
+
+#coverPoissonLune-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+
+    /*  SCENE  */
+
+    #contentScene {
+        max-width: 1000px;
+    }
+
+    .vid {
+        width:252px;
+        height:159px;
+    }
+
+    .contentDate {
+        display: grid;
+        grid-template-columns: 300px 255px 210px 230px 150px;
+        margin:20px 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /*  LIVRES  */
+
+    .contentLivres {
+        max-width: 1000px;
+    }
+
+    .vidLivres {
+        width:480px;
+        height:270px;
+    }
+
+    /*  CLIPS  */
+
+    #contentClip {
+        max-width: 1100px;
+    }
+
+
+    .clip {
+        margin:0;
+    }
+
+    /* BOUTIQUE */
+
+    #contentBoutique {
+        grid-template-columns: repeat(3,auto);
+        max-width: 1100px;
+        grid-gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+
+    /* MENU */
+
+    #wrapper {
+        display: inline;
+    }
+
+    #desktopMenu {
+        display: none;
+    }
+
+    #contentNav {
+        background-color: transparent;
+    }
+
+    input[type="checkbox"]#burger:checked ~ #contenu {
+        box-shadow: -3px -2px 10px #f3eeee;
+    }
+
+    #menu-burger {
+        position:absolute;
+        z-index:950;
+        top:2.5em;
+        right:2.3em;
+        cursor:pointer;
+        display:none;
+        transition:0.55s;
+    }
+
+    /* INFOS */
+
+    #infos {
+        margin-left:-200px;
+        padding-top: 90px;
+    }
+
+
+    /*  SCENE  */
+
+    #contentScene {
+        max-width: 700px;
+    }
+
+    .vid2 {
+        margin:7px;
+        width:310px;
+        height:196px;
+    }
+
+    .contentDate {
+        display: grid;
+        grid-template-columns: 168px 225px 123px 230px 150px;
+        margin:20px 0;
+        font-size: 14px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #videos-concert {
+        display: none;
+    }
+
+    #videos-concert-mobile {
+        display: inline-block;
+        margin:10px 0;
+    }
+
+    /*  LIVRES  */
+
+    .contentLivres {
+        max-width: 700px;
+    }
+
+    .vidLivres {
+        width:355px;
+        height:200px;
+    }
+
+    /*  PHOTOS  */
+
+    #contentPhotos {
+        grid-template-columns: repeat(2, auto);
+        max-width: 700px;
+    }
+
+    /*  CLIPS  */
+
+    #contentClip {
+        max-width: 700px;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+    }
+
+
+    .clip {
+        margin:0;
+    }
+
+    /* BOUTIQUE */
+
+    #contentBoutique {
+        grid-template-columns: repeat(2,auto);
+        max-width: 700px;
+        grid-gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+
+    /* MENU */
+
+    #wrapper {
+        display: inline;
+    }
+
+    #desktopMenu {
+        display: none;
+    }
+
+    #contentNav {
+        background-color: transparent;
+    }
+
+    input[type="checkbox"]#burger:checked ~ #contenu {
+        box-shadow: -3px -2px 10px #f3eeee;
+    }
+
+    #menu-burger {
+        position:absolute;
+        z-index:950;
+        top:2.5em;
+        right:2.3em;
+        cursor:pointer;
+        display:none;
+        transition:0.55s;
+    }
+
+    /* INFOS */
+
+    #infos {
+        margin:auto;
+        padding-top: 400px;
+    }
+
+
+    #socialInfos {
+        background: url("../images/bg-mobil.png") top center no-repeat;
+        font-size:50px;
+        height:650px;
+    }
+
+    #socialInfos #prenom {
+        font-size: 62px;
+    }
+
+
+    #socialInfos a {
+        text-decoration: none;
+        font-size: 40px;
+        margin:0 1px;
+        color: #FFFFFF;
+        transition-duration: 0.5s;
+    }
+
+    #socialInfos a:hover {
+        color: #b81d17;
+        transition-duration: 0.5s;
+    }
+
+    #socialIcons {
+        background: transparent;
+        height:145px;
+    }
+
+    #icons {
+        margin-left: 0;
+    }
+
+
+    /*  SCENE  */
+
+    #contentScene {
+        max-width: 500px;
+    }
+
+    #gridScene {
+        display: inline-block;
+    }
+
+    #affiche {
+        margin-left: 0;
+    }
+
+    .vid2 {
+        margin:7px;
+        width:310px;
+        height:196px;
+    }
+
+    .contentDate {
+        display: inline-block;
+        margin:30px 30px;
+        font-size: 15px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #videos-concert {
+        display: none;
+    }
+
+    #videos-concert-mobile {
+        display: inline-block;
+        margin:10px 0;
+    }
+
+    /*  LIVRES  */
+
+    .contentLivres {
+        max-width: 500px;
+        display: inline-block;
+    }
+
+    #coverPoissonLune {
+        display: none;
+    }
+
+    #coverPoissonLune-mobile {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .vidLivres {
+        width:355px;
+        height:200px;
+    }
+
+    /*  PHOTOS  */
+
+    #contentPhotos {
+        grid-template-columns: repeat(1, auto);
+        max-width: 500px;
+    }
+
+    /*  CLIPS  */
+
+    #contentClip {
+        max-width: 500px;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 10px;
+    }
+
+
+    .clip {
+        margin:0;
+    }
+
+    /* BOUTIQUE */
+
+    #contentBoutique {
+        grid-template-columns: repeat(2,auto);
+        max-width: 500px;
+        grid-gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 699px) {
+
+    /* MENU */
+
+    #wrapper {
+        display: inline;
+    }
+
+    #desktopMenu {
+        display: none;
+    }
+
+    #contentNav {
+        background-color: transparent;
+    }
+
+    input[type="checkbox"]#burger:checked ~ #contenu {
+        box-shadow: -3px -2px 10px #f3eeee;
+    }
+
+    #menu-burger {
+        position:absolute;
+        z-index:950;
+        top:2.5em;
+        right:2.3em;
+        cursor:pointer;
+        display:none;
+        transition:0.55s;
+    }
+
+    /* INFOS */
+
+    #infos {
+        margin:auto;
+        padding-top: 400px;
+    }
+
+
+    #socialInfos {
+        background: url("../images/bg-mobil.png") top center no-repeat;
+        font-size:50px;
+        height:650px;
+    }
+
+    #socialInfos #prenom {
+        font-size: 62px;
+    }
+
+
+    #socialInfos a {
+        text-decoration: none;
+        font-size: 40px;
+        margin:0 1px;
+        color: #FFFFFF;
+        transition-duration: 0.5s;
+    }
+
+    #socialInfos a:hover {
+        color: #b81d17;
+        transition-duration: 0.5s;
+    }
+
+    #socialIcons {
+        background: transparent;
+        height:145px;
+    }
+
+    #icons {
+        margin-left: 0;
+    }
+
+
+    /*  SCENE  */
+
+    #contentScene {
+        max-width: 360px;
+        padding:10px 5px 10px 5px;
+    }
+
+    #gridScene {
+        display: inline-block;
+    }
+
+    #affiche {
+        margin-left: 0;
+    }
+
+    #resume {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .vid2 {
+        margin:7px;
+        width:310px;
+        height:196px;
+    }
+
+    .contentDate {
+        display: inline-block;
+        margin:30px 30px;
+        font-size: 15px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #videos-concert {
+        display: none;
+    }
+
+    #videos-concert-mobile {
+        display: inline-block;
+        margin:10px 0;
+    }
+
+    /*  LIVRES  */
+
+    .contentLivres {
+        max-width: 360px;
+        padding:10px 5px 10px 5px;
+        display: inline-block;
+    }
+
+    #coverPoissonLune {
+        display: none;
+    }
+
+    #coverPoissonLune-mobile {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .vidLivres {
+        width:355px;
+        height:200px;
+    }
+
+    /*  PHOTOS  */
+
+    #contentPhotos {
+        grid-template-columns: repeat(1, auto);
+        max-width: 500px;
+    }
+
+    /*  CLIPS  */
+
+    #contentClip {
+        max-width: 500px;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 10px;
+    }
+
+
+    .clip {
+        margin:0;
+    }
+
+    /* BOUTIQUE */
+
+    #contentBoutique {
+        grid-template-columns: repeat(1,auto);
+        max-width: 360px;
+        grid-gap: 20px;
+    }
+
+    #venteDVD {
+        padding:20px;
+    }
+
+}
+
+
+
+
+
+
+

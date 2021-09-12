@@ -30,6 +30,30 @@
                     <li><a class="js-scrollTo" href="#contacts">c<span>o</span>nt<span>a</span>ct<span>s</span></a></li>
                 </ul>
             </nav>
+            <div id="wrapper">
+                <form id="form1">
+                    <input type="checkbox" name="burger" id="burger"/>
+                    <label for="burger" id="menu-burger">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </label>
+
+                    <div id="contenu">
+                        <nav id="menuResp">
+                            <ul>
+                                <li><a class="js-scrollTo" href="#accueil"><span>a</span>ccueil</a></li>
+                                <li><a class="js-scrollTo" href="#surScene"><span>s</span>ur <span>s</span>cene</a></li>
+                                <li><a class="js-scrollTo" href="#livres">livre<span>s</span></a></li>
+                                <li><a class="js-scrollTo" href="#photos">ph<span>o</span>t<span>o</span><span>s</span></a></li>
+                                <li><a class="js-scrollTo" href="#clips">clip<span>s</span></a></li>
+                                <li><a class="js-scrollTo" href="#boutique">b<span>o</span>utique</a></li>
+                                <li><a class="js-scrollTo" href="#contacts">c<span>o</span>nt<span>a</span>ct<span>s</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </form>
+            </div>
         </div>
         <div id="socialInfos">
             <div id="infos">
@@ -70,35 +94,39 @@
                 <p>Inimitable, c’est avec et une authenticité rare que cette chanteuse-comédienne s’engage dans un
                     one-woman-show avec un esprit décidément rock.</p>
                 <div id="videos-concert">
-                    <iframe width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe id="vidRight" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="vid" width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="vid" id="vidRight" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+        <div id="videos-concert-mobile">
+            <iframe class="vid2" width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vid2" id="vidRight-mobile" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div id="contentBilletterie">
             <h3>Billetterie</h3>
-            <div class="date">
+            <div class="contentDate">
                 <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
                 <div class="date">Samedi 11 septembre 2021</div>
                 <div class="ville">Saint-André-des-Eaux (22)</div>
                 <div class="salle">L'éprouvette</div>
                 <div class="vente"><a href="https://www.facebook.com/events/4434351029919152" target="_blank">Réserver</a></div>
             </div>
-            <div class="date">
+            <div class="contentDate">
                 <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
                 <div class="date">Mardi 28 septembre 2021</div>
                 <div class="ville">Nantes (44)</div>
                 <div class="salle">Salle Paul Fort</div>
                 <div class="vente"><a href="https://www.labouchedair.com/evenements/therese/" target="_blank">Réserver</a></div>
             </div>
-            <div class="date">
+            <div class="contentDate">
                 <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
                 <div class="date">Mardi 11 janvier 2022</div>
                 <div class="ville">Beaucouzé (49)</div>
                 <div class="salle">Région en scène</div>
                 <div class="soon">Bientôt disponible</div>
             </div>
-            <div class="date">
+            <div class="contentDate">
                 <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
                 <div class="date">Vendredi 8 avril 2022</div>
                 <div class="ville">Pornichet (44)</div>
@@ -115,6 +143,9 @@
     <h1>Livres</h1>
 
     <div class="contentLivres">
+        <div id="coverPoissonLune-mobile">
+            <img src="static/images/livres/CoverPoissonLune.jpg" alt="Cover-Livre-Poisson-Lune">
+        </div>
         <div id="resumeLivrePoissonLune">
             <h2>Poisson lune</h2>
             <p class="textItalic">"C’est ahurissant, comme seule la vie sait l’être."</p>
@@ -145,10 +176,10 @@
 
     <div id="videosLivre">
         <div class="contentVideoLivres">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dNb_IS2xS38?start=2667" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidLivres" width="560" height="315" src="https://www.youtube.com/embed/dNb_IS2xS38?start=2667" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="contentVideoLivres">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7AFlCuaOzSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidLivres" width="560" height="315" src="https://www.youtube.com/embed/7AFlCuaOzSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
