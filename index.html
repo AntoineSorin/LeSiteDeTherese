@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="icon" type="image/x-icon" href="static/images/icon.png"/>
     <link href="static/js/zoombox/zoombox.css" rel="stylesheet" type="text/css" media="screen" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/zoombox/zoombox.js"></script>
+    <script src="static/js/zoombox/zoombox.js"></script>
     <script>
         jQuery(function($){
             $('a.zoombox').zoombox();
@@ -73,6 +72,16 @@
                         </a>
                     </div>
                 </div>
+                <div id="nouvelEP">
+                    <div id="coverEP">
+                        <img src="static/images/coverEP.jpg" alt="couverture-ep">
+                    </div>
+                    <div id="infosEP">
+                        <p class="ep">EP 4 chansons</p>
+                        <p class="sortie-ep">Sortie 2022</p>
+                        <a href="https://fr.ulule.com/therese-ep-meme-pas-mal/" target="_blank"><i class="fas fa-euro-sign iconEuro"></i>Financement participatif</a>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -87,33 +96,26 @@
                 <img src="static/images/scene/Affiche-MemePasMal.png" alt="Affiche-Spectacle-Meme-Pas-Mal">
             </div>
             <div id="resume">
-                <h2>L'ange punk !</h2>
+                <h2>L'Ange Punk !</h2>
                 <p>Tel l’oiseau de feu, Thérèse revient dynamiter la scène française avec des textes décapants et poétiques.</p>
                 <p>Sensible, drôle et rentre dedans, elle est la "TNT" de la poésie chantée. D’une plume aiguisée, seule avec sa guitare,
                     elle a l’art de créer une proximité avec le public.</p>
                 <p>Ne vous y trompez pas, nous sommes très loin des clichés de la chanson française ! Auteure-compositrice,
                     Thérèse bouscule les règles du verbe avec un humour implacable.</p>
-                <p>Inimitable, c’est avec et une authenticité rare que cette chanteuse-comédienne s’engage dans un
+                <p>Inimitable, c’est avec une authenticité rare que cette chanteuse-comédienne s’engage dans un
                     one-woman-show avec un esprit décidément rock.</p>
                 <div id="videos-concert">
-                    <iframe class="vid" width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="vid" id="vidRight" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="vid" width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="vid" id="vidRight" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         <div id="videos-concert-mobile">
-            <iframe class="vid2" width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="vid2" id="vidRight-mobile" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vid2" width="353" height="222" src="https://www.youtube.com/embed/iz5AF8GlsgE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vid2" id="vidRight-mobile" width="353" height="222" src="https://www.youtube.com/embed/7sbeFqd6ixk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div id="contentBilletterie">
             <h3>Billetterie</h3>
-            <div class="contentDate">
-                <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
-                <div class="date">Samedi 11 septembre 2021</div>
-                <div class="ville">Saint-André-des-Eaux (22)</div>
-                <div class="salle">L'éprouvette</div>
-                <div class="vente"><a href="https://www.facebook.com/events/4434351029919152" target="_blank">Réserver</a></div>
-            </div>
             <div class="contentDate">
                 <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
                 <div class="date">Mardi 28 septembre 2021</div>
@@ -126,7 +128,7 @@
                 <div class="date">Mardi 11 janvier 2022</div>
                 <div class="ville">Beaucouzé (49)</div>
                 <div class="salle">Région en scène</div>
-                <div class="soon">Bientôt disponible</div>
+                <div class="vente"><a href="https://www.billetweb.fr/festival-region-en-scene2" target="_blank">Réserver</a></div>
             </div>
             <div class="contentDate">
                 <div class="logo"><img src="static/images/scene/logo-guitare-billetterie.png" alt="logo-guitare-miniature"></div>
@@ -178,10 +180,10 @@
 
     <div id="videosLivre">
         <div class="contentVideoLivres">
-            <iframe class="vidLivres" width="560" height="315" src="https://www.youtube.com/embed/dNb_IS2xS38?start=2667" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidLivres" width="560" height="315" src="https://www.youtube.com/embed/dNb_IS2xS38?start=2667" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="contentVideoLivres">
-            <iframe class="vidLivres" width="560" height="315" src="https://www.youtube.com/embed/7AFlCuaOzSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidLivres" width="560" height="315" src="https://www.youtube.com/embed/7AFlCuaOzSc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -204,14 +206,15 @@
     <div id="dedicaces">
         <p class="bold">En dédicace pour le livre Poisson lune et le conte pour enfants : </p>
         <div id="datesDedicaces">
-            <p>Dimanche 17 octobre 2021 : La Chaume en Retz – Salon du livre jeunesse.</p>
+            <p>Dimanche 17 octobre 2021 : La Chaume en Retz (44) – Salon du livre jeunesse.</p>
+            <p>Dimanche 19 et lundi 20 décembre 2021 : Noirmoutier (85) - Salon du livre Her de Fête.</p>
         </div>
     </div>
     <div id="asso">
         <a href="http://www.surrenales.com/" target="_blank">
-        <img id="logoAsso" src="static/images/livres/logo-assoSurrenales.png" alt="logo-association-Surrenales">
-        <br>
-        Contacter l'Association Surrénales
+            <img id="logoAsso" src="static/images/livres/logo-assoSurrenales.png" alt="logo-association-Surrenales">
+            <br>
+            Contacter l'Association Surrénales
         </a>
     </div>
 </div>
@@ -260,22 +263,22 @@
     <h1>Clips</h1>
     <div id="contentClip">
         <div class="clip">
-            <iframe width="353" height="222" src="https://www.youtube.com/embed/zb6S2eKS1dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidClip" width="353" height="222" src="https://www.youtube.com/embed/zb6S2eKS1dg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="clip">
-            <iframe width="353" height="222" src="https://www.youtube.com/embed/LiJzwTfskr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidClip" width="353" height="222" src="https://www.youtube.com/embed/LiJzwTfskr8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="clip">
-            <iframe width="353" height="222" src="https://www.youtube.com/embed/TcVyBFjGPu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidClip" width="353" height="222" src="https://www.youtube.com/embed/TcVyBFjGPu4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="clip">
-            <iframe width="353" height="222" src="https://www.youtube.com/embed/vzt1Ka1DRHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidClip" width="353" height="222" src="https://www.youtube.com/embed/vzt1Ka1DRHU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="clip">
-            <iframe width="353" height="222" src="https://www.youtube.com/embed/O8f07Yn45IU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidClip" width="353" height="222" src="https://www.youtube.com/embed/O8f07Yn45IU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="clip">
-            <iframe width="353" height="222" src="https://www.youtube.com/embed/ktq4lNze6HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="vidClip" width="353" height="222" src="https://www.youtube.com/embed/ktq4lNze6HA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -403,6 +406,6 @@
 </div>
 <script src="https://kit.fontawesome.com/9b87c4faa8.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="static/js/defilement-page.js"></script>
+<script src="static/js/defilement-page.js"></script>
 </body>
 </html>

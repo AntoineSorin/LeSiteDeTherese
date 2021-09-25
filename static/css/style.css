@@ -3,6 +3,8 @@ Author: Antoine Sorin
 Version: 1
 */
 
+/* Import des fonts */
+
 @font-face {
     font-family: "PunkSongwriter";
     src: url("../fonts/PunkSongwriterRoughPERSO.ttf") format("truetype");
@@ -18,13 +20,22 @@ Version: 1
     src: url("../fonts/LatoRegular.ttf") format("truetype");
 }
 
+/* Déclaration des variables */
+
+:root {
+    --color-red: #b81d17;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-beige: #f3eeee;
+}
+
 * {
     margin:0;
     padding:0;
 }
 
 body {
-    background-color: #000000;
+    background-color: var(--color-black);
 }
 
 header {
@@ -35,7 +46,7 @@ header {
 /******* MENU ********/
 
 #contentNav {
-    background-color: #000000;
+    background-color: var(--color-black);
     height:60px;
     margin: auto;
     text-align: center;
@@ -44,7 +55,7 @@ header {
 }
 
 #desktopMenu {
-    width: 1080px;
+    width: 1065px;
     margin: auto;
     padding-top:18px;
 }
@@ -61,18 +72,18 @@ header {
     text-transform: uppercase;
     font-size: 22px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--color-white);
     letter-spacing: 2px;
 }
 
 #desktopMenu ul li a span {
-    color: #b81d17;
+    color: var(--color-red);
 }
 
 /******* INFOS SOCIAL ********/
 
 #socialInfos {
-    color: #FFFFFF;
+    color: var(--color-white);
     height: 972px;
     background: url("../images/bg.jpg") top center no-repeat;
     text-transform: uppercase;
@@ -87,7 +98,7 @@ header {
 }
 
 #infos span {
-    color: #b81d17;
+    color: var(--color-red);
 }
 
 #socialInfos #prenom {
@@ -98,12 +109,12 @@ header {
     text-decoration: none;
     font-size: 40px;
     margin:0 1px;
-    color: #FFFFFF;
+    color: var(--color-white);
     transition-duration: 0.5s;
 }
 
 #socialInfos a:hover {
-    color: #b81d17;
+    color: var(--color-red);
     transition-duration: 0.5s;
 }
 
@@ -116,10 +127,45 @@ header {
     margin-left: 140px;
 }
 
+/******* INFOS EP ********/
+
+
+#nouvelEP {
+    font-family: "LatoRegular", Tahoma, Arial, serif;
+    font-size: 22px;
+    margin-top:25px;
+}
+
+.sortie-ep {
+    color: var(--color-red);
+    margin-bottom:40px;
+}
+
+#infosEP {
+    margin: 40px auto auto;
+}
+
+#infosEP a {
+    background-color: var(--color-beige);
+    color: var(--color-red);
+    font-size: 18px;
+    padding:10px;
+    border-radius: 5px;
+}
+
+#infosEP a:hover {
+    background-color: var(--color-red);
+    color: var(--color-beige);
+}
+
+.iconEuro {
+    padding-right:10px;
+}
+
 /******* SUR SCENE ********/
 
 #surScene {
-    background-color: #b81d17;
+    background-color: var(--color-red);
     width: 100%;
     margin: auto;
     text-align: center;
@@ -127,8 +173,8 @@ header {
 }
 
 #surScene h1 {
-    font-family: "TravisZone", Tahoma, Arial serif;
-    color: #FFFFFF;
+    font-family: "TravisZone", Tahoma, Arial, serif;
+    color: var(--color-white);
     letter-spacing: 3px;
     padding: 20px;
 }
@@ -171,6 +217,9 @@ header {
     margin-top:24px;
 }
 
+.vid, .vid2, .vidLivres, .vidClip {
+    border: none;
+}
 
 #vidRight {
     margin-left: 50px;
@@ -179,8 +228,8 @@ header {
 /******* DATES ********/
 
 #surScene h3 {
-    color: #b81d17;
-    font-family: "TravisZone", Tahoma, Arial serif;
+    color: var(--color-red);
+    font-family: "TravisZone", Tahoma, Arial, serif;
     letter-spacing: 2px;
     font-size: 30px;
     margin: 20px 0;
@@ -206,7 +255,7 @@ header {
 
 .vente a {
     color: #ded7d7;
-    background-color: #b81d17;
+    background-color: var(--color-red);
     padding:15px 30px;
     text-decoration: none;
     text-transform: uppercase;
@@ -223,14 +272,14 @@ header {
 }
 
 #livres h1 {
-    color: #b81d17;
-    font-family: "TravisZone", Tahoma, Arial serif;
+    color: var(--color-red);
+    font-family: "TravisZone", Tahoma, Arial, serif;
     letter-spacing: 3px;
     padding: 20px;
 }
 
 .contentLivres {
-    background-color: #f3eeee;
+    background-color: var(--color-beige);
     padding: 20px;
     border-radius: 10px;
     max-width: 1208px;
@@ -273,9 +322,9 @@ header {
 
 
 #lienCommanderPoissonLune {
-    background-color: #b81d17;
-    border: solid 3px #b81d17;
-    color: #f3eeee;
+    background-color: var(--color-red);
+    border: solid 3px var(--color-red);
+    color: var(--color-beige);
 }
 
 .conte {
@@ -309,9 +358,9 @@ header {
     border-radius: 5px;
     text-transform: uppercase;
     font-family: "LatoRegular", Tahoma, Arial, serif;
-    background-color: #b81d17;
-    border: solid 3px #b81d17;
-    color: #f3eeee;
+    background-color: var(--color-red);
+    border: solid 3px var(--color-red);
+    color: var(--color-beige);
 }
 
 
@@ -341,7 +390,7 @@ header {
 
 #asso a {
     text-decoration: none;
-    color: #b81d17;
+    color: var(--color-red);
 }
 
 #logoAsso {
@@ -357,8 +406,8 @@ header {
 }
 
 #photos h1 {
-    color: #f3eeee;
-    font-family: "TravisZone", Tahoma, Arial serif;
+    color: var(--color-beige);
+    font-family: "TravisZone", Tahoma, Arial, serif;
     letter-spacing: 3px;
     padding: 30px;
 }
@@ -377,7 +426,7 @@ header {
 
 #contentInfosPhotos {
     font-family: "LatoRegular", Tahoma, Arial, serif;
-    color: #f3eeee;
+    color: var(--color-beige);
     padding:30px;
 }
 
@@ -386,8 +435,8 @@ header {
 }
 
 #contentInfosPhotos a {
-    background-color: #f3eeee;
-    color: #b81d17;
+    background-color: var(--color-beige);
+    color: var(--color-red);
     padding:15px;
     border-radius:5px;
     text-decoration: none;
@@ -395,21 +444,21 @@ header {
 }
 
 #contentInfosPhotos a:hover {
-    background-color: #b81d17;
-    color: #f3eeee;
+    background-color: var(--color-red);
+    color: var(--color-beige);
 }
 
 /******* CLIPS ********/
 
 #clips {
-    background-color: #b81d17;
+    background-color: var(--color-red);
     padding:40px 0 100px 0;
     text-align: center;
 }
 
 #clips h1 {
-    color: #f3eeee;
-    font-family: "TravisZone", Tahoma, Arial serif;
+    color: var(--color-beige);
+    font-family: "TravisZone", Tahoma, Arial, serif;
     letter-spacing: 3px;
     margin-bottom:50px;
 }
@@ -428,14 +477,14 @@ header {
 /******* BOUTIQUE ********/
 
 #boutique {
-    background-color: #f3eeee;
+    background-color: var(--color-beige);
     padding:40px 0 100px 0;
     text-align: center;
 }
 
 #boutique h1 {
-    color: #b81d17;
-    font-family: "TravisZone", Tahoma, Arial serif;
+    color: var(--color-red);
+    font-family: "TravisZone", Tahoma, Arial, serif;
     letter-spacing: 3px;
     margin-bottom:50px;
 }
@@ -464,17 +513,17 @@ header {
 }
 
 .commande {
-    background-color: #b81d17;
-    color: #f3eeee;
+    background-color: var(--color-red);
+    color: var(--color-beige);
     border-radius: 5px;
     padding:10px;
     text-decoration: none;
 }
 
 .plusdinfos {
-    background-color: #f3eeee;
-    color: #b81d17;
-    border: solid 2px #b81d17;
+    background-color: var(--color-beige);
+    color: var(--color-red);
+    border: solid 2px var(--color-red);
     text-decoration: none;
     border-radius: 5px;
     padding: 8px;
@@ -505,12 +554,12 @@ header {
 }
 
 #contacts {
-    color: #f3eeee;
+    color: var(--color-beige);
 }
 
 #contacts h1 {
-    font-family: "TravisZone", Tahoma, Arial serif;
-    color: #b81d17;
+    font-family: "TravisZone", Tahoma, Arial, serif;
+    color: var(--color-red);
     letter-spacing: 3px;
     padding:20px;
     text-align: center;
@@ -525,7 +574,7 @@ header {
 }
 
 .personne a {
-    color: #b81d17;
+    color: var(--color-red);
     text-decoration: none;
     font-weight: bold;
 }
@@ -539,7 +588,7 @@ header {
 }
 
 .info a {
-    color: #b81d17;
+    color: var(--color-red);
     text-decoration: none;
     font-weight: bold;
 }
@@ -558,14 +607,14 @@ header {
 
 #socialContact a {
     text-decoration: none;
-    color: #f3eeee;
+    color: var(--color-beige);
     font-size: 30px;
     margin:5px;
     transition-duration: 0.5s;
 }
 
 #socialContact a:hover {
-    color: #b81d17;
+    color: var(--color-red);
 }
 
 #lienLogoKalmia {
@@ -578,7 +627,7 @@ header {
 
 #lienEditeur {
     text-decoration: none;
-    color: #f3eeee;
+    color: var(--color-beige);
 }
 
 #realSite {
@@ -586,16 +635,9 @@ header {
 }
 
 #realSite a {
-    color: #b81d17;
+    color: var(--color-red);
     text-decoration: none;
 }
-
-
-
-
-
-
-
 
 #burger {
     display: none;
@@ -603,10 +645,10 @@ header {
 
 /* Style des contenus */
 #form1 label {
-    background:#b81d17;
+    background:var(--color-red);
     display:block;
     padding:5px;
-    color:#f3eeee;
+    color:var(--color-beige);
     text-align:center;
     font-weight:bold;
     border-radius:2px;
@@ -616,7 +658,7 @@ header {
 
 #contenu {
     display:flex;
-    background: #000000;
+    background: var(--color-black);
     position:fixed;
     top:0;
     right:-200px;
@@ -659,7 +701,7 @@ header {
     display:block;
     width:20px;
     height:3px;
-    background-color:#f3eeee;
+    background-color:var(--color-beige);
     margin:4px 4px;
     transition:0.4s;
 }
@@ -699,14 +741,14 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
 
 #menuResp ul li a {
     font-family: PunkSongwriter, tahoma, arial, serif;
-    color: #f3eeee;
+    color: var(--color-beige);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 22px;
 }
 
 #menuResp ul li a span {
-    color: #b81d17;
+    color: var(--color-red);
 }
 
 #wrapper {
@@ -793,7 +835,7 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     }
 
     input[type="checkbox"]#burger:checked ~ #contenu {
-        box-shadow: -3px -2px 10px #f3eeee;
+        box-shadow: -3px -2px 10px var(--color-beige);
     }
 
     #menu-burger {
@@ -904,7 +946,7 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     }
 
     input[type="checkbox"]#burger:checked ~ #contenu {
-        box-shadow: -3px -2px 10px #f3eeee;
+        box-shadow: -3px -2px 10px var(--color-beige);
     }
 
     #menu-burger {
@@ -928,7 +970,7 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     #socialInfos {
         background: url("../images/bg-mobil.png") top center no-repeat;
         font-size:50px;
-        height:650px;
+        height:1000px;
     }
 
     #socialInfos #prenom {
@@ -940,12 +982,12 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
         text-decoration: none;
         font-size: 40px;
         margin:0 1px;
-        color: #FFFFFF;
+        color: var(--color-white);
         transition-duration: 0.5s;
     }
 
     #socialInfos a:hover {
-        color: #b81d17;
+        color: var(--color-red);
         transition-duration: 0.5s;
     }
 
@@ -957,6 +999,42 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     #icons {
         margin-left: 0;
     }
+
+    /******* INFOS EP ********/
+
+
+    #nouvelEP {
+        background-color: var(--color-beige);
+        width: 210px;
+        margin: -70px auto auto;
+        height:340px;
+    }
+
+    .sortie-ep {
+        margin-bottom:20px;
+    }
+
+    #infosEP {
+        margin: 10px auto auto;
+    }
+
+    .ep {
+        color: black;
+    }
+
+    #infosEP a {
+        background-color: var(--color-red);
+        color: var(--color-beige);
+        font-size: 12px;
+        padding:10px;
+        border-radius: 5px;
+    }
+
+    #infosEP a:hover {
+        background-color: var(--color-red);
+        color: var(--color-beige);
+    }
+
 
 
     /*  SCENE  */
@@ -1066,7 +1144,7 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     }
 
     input[type="checkbox"]#burger:checked ~ #contenu {
-        box-shadow: -3px -2px 10px #f3eeee;
+        box-shadow: -3px -2px 10px var(--color-beige);
     }
 
     #menu-burger {
@@ -1090,7 +1168,7 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     #socialInfos {
         background: url("../images/bg-mobil.png") top center no-repeat;
         font-size:50px;
-        height:650px;
+        height:1000px;
     }
 
     #socialInfos #prenom {
@@ -1102,12 +1180,12 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
         text-decoration: none;
         font-size: 40px;
         margin:0 1px;
-        color: #FFFFFF;
+        color: var(--color-white);
         transition-duration: 0.5s;
     }
 
     #socialInfos a:hover {
-        color: #b81d17;
+        color: var(--color-red);
         transition-duration: 0.5s;
     }
 
@@ -1118,6 +1196,41 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
 
     #icons {
         margin-left: 0;
+    }
+
+    /******* INFOS EP ********/
+
+
+    #nouvelEP {
+        background-color: var(--color-beige);
+        width: 210px;
+        margin: -70px auto auto;
+        height:340px;
+    }
+
+    .sortie-ep {
+        margin-bottom:20px;
+    }
+
+    #infosEP {
+        margin: 10px auto auto;
+    }
+
+    .ep {
+        color: black;
+    }
+
+    #infosEP a {
+        background-color: var(--color-red);
+        color: var(--color-beige);
+        font-size: 12px;
+        padding:10px;
+        border-radius: 5px;
+    }
+
+    #infosEP a:hover {
+        background-color: var(--color-red);
+        color: var(--color-beige);
     }
 
 
@@ -1221,10 +1334,3 @@ input[type="checkbox"]#burger:checked ~ label .bar3 {
     }
 
 }
-
-
-
-
-
-
-
